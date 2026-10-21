@@ -1,0 +1,51 @@
+{
+  "name": "appsecradar",
+  "version": "0.1.0",
+  "description": "Find the security holes your AI left behind. A security scanner for AI-built (vibe-coded) apps.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Othm1ne/appsecradar.git",
+    "directory": "packages/appsecradar"
+  },
+  "homepage": "https://github.com/Othm1ne/appsecradar#readme",
+  "bugs": {
+    "url": "https://github.com/Othm1ne/appsecradar/issues"
+  },
+  "type": "module",
+  "bin": {
+    "appsecradar": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build && node -e \"for (const f of ['README.md','LICENSE']) require('fs').copyFileSync('../../' + f, f)\"",
+    "test": "npm run build && node --test \"test/*.test.mjs\""
+  },
+  "keywords": [
+    "security",
+    "scanner",
+    "vibe-coding",
+    "ai",
+    "supabase",
+    "nextjs",
+    "stripe",
+    "secrets",
+    "sast"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^3.25.76"
+  }
+}

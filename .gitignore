@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.env
+.env.local
+# copied in by prepack
+packages/appsecradar/README.md
+packages/appsecradar/LICENSE
