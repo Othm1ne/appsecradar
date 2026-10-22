@@ -1,6 +1,6 @@
 {
   "name": "appsecradar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find the security holes your AI left behind. A security scanner for AI-built (vibe-coded) apps.",
   "repository": {
     "type": "git",
