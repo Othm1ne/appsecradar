@@ -18,8 +18,7 @@ export function renderTerminal(result: ScanResult, useColor: boolean): string {
 
   if (result.findings.length === 0) {
     out.push(c.green("  ✔ No issues found by the current rules."));
-    out.push(c.dim("    This does not prove the app is secure. It means none of the known AI-code mistakes were detected."));
-    out.push("");
+     out.push(c.dim("    This means none of the known AI-code mistakes were detected."));
     return out.join("\n");
   }
 
